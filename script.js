@@ -1,9 +1,4 @@
-// Mobile menu
-const btn = document.querySelector('.menu-btn');
-const links = document.querySelector('.nav-links');
-if (btn && links) {
-    btn.addEventListener('click', () => {
-        const open = links.classList.toggle('open');// Tells the CSS that JavaScript is running (so scroll animations are safe to use)
+// Tells the CSS that JavaScript is running (so scroll animations are safe to use)
 document.documentElement.classList.add('js');
 
 // ---------- Theme (light / dark) ----------
@@ -72,7 +67,3 @@ document.documentElement.classList.add('js');
         io.observe(el);
     });
 })();
-        btn.setAttribute('aria-expanded', open);
-        btn.textContent = open ? 'Close' : 'Menu';
-    });
-}
